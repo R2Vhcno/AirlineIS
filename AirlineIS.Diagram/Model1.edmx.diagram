@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="05e4d63bd9454bfb82ef251771d1a10e" Name="Diagram1">
+        <EntityTypeShape EntityType="simplarsModel.Airport" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="simplarsModel.Class" Width="1.5" PointX="5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="simplarsModel.Flight" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="simplarsModel.Invoice" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="simplarsModel.Passenger" Width="1.5" PointX="7.5" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="simplarsModel.Plane" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="simplarsModel.PlaneSeat" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="simplarsModel.Ticket" Width="1.5" PointX="5.5" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="simplarsModel.FK_FlightsFrom_ToAirports" ManuallyRouted="false" />
+        <AssociationConnector Association="simplarsModel.FK_FlightsTo_ToAirports" ManuallyRouted="false" />
+        <AssociationConnector Association="simplarsModel.FK_PlaneSeats_ToClasses" ManuallyRouted="false" />
+        <AssociationConnector Association="simplarsModel.FK_Flights_ToPlanes" ManuallyRouted="false" />
+        <AssociationConnector Association="simplarsModel.FK_Tickets_ToFlights" ManuallyRouted="false" />
+        <AssociationConnector Association="simplarsModel.FK_Invoices_ToTickets" ManuallyRouted="false" />
+        <AssociationConnector Association="simplarsModel.FK_Tickets_ToPassengers" ManuallyRouted="false" />
+        <AssociationConnector Association="simplarsModel.FK_PlaneSeats_ToPlanes" ManuallyRouted="false" />
+        <AssociationConnector Association="simplarsModel.FK_Tickets_ToPlaneSeats" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
